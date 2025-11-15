@@ -773,3 +773,10 @@ function getLastEmployeeLastName(){
 
  }
 getEmployeeDepartmentById(5)
+/*================================*/
+/********* countEmployees ******* */                 
+/******************************** */
+function countEmployees(){
+console.log(employees.length)
+}
+countEmployees()
