@@ -811,3 +811,18 @@ function getHighestPaidEmployee(){
   }
 }
 getHighestPaidEmployee()
+
+/*================================*/
+/*    countEmployeesInDepartment * */                 
+/******************************** */
+function countEmployeesInDepartment(department){
+  let count =0
+   for(get_department of employees){
+   if(get_department.department===department){
+    count++
+
+   }
+   }
+   return count
+}
+console.log(countEmployeesInDepartment("Développement"))
