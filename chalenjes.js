@@ -826,3 +826,28 @@ function countEmployeesInDepartment(department){
    return count
 }
 console.log(countEmployeesInDepartment("Développement"))
+
+/*================================*/
+/*    getUniqueDepartments* */                 
+/******************************** */
+function is_frequent(department, list){
+  for (e_ of list){
+    if (e_ == department){
+      return true
+    }
+  }
+
+}
+
+function getUniqueDepartments(){
+  let list_ = []
+  for (e of employees){
+    if (!is_frequent(e.department, list_)){
+      list_.push(e.department)
+    }
+  }
+  console.log(list_)
+}
+
+getUniqueDepartments()
+
