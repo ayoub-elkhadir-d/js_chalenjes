@@ -780,3 +780,16 @@ function countEmployees(){
 console.log(employees.length)
 }
 countEmployees()
+
+/*================================*/
+/*       calculateAverageAge * */                 
+/******************************** */
+function calculateAverageAge(){
+  let total_age =0;
+for(employe of employees){
+total_age+=employe.age
+}
+console.log(total_age/size)
+
+}
+calculateAverageAge()
