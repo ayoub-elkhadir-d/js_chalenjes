@@ -781,11 +781,11 @@ console.log(employees.length)
 }
 countEmployees()
 
-/*================================*/
-/*       calculateAverageAge * */                 
-/******************************** */
 function calculateAverageAge(){
   let total_age =0;
+  /*================================*/
+  /*       calculateAverageAge * */                 
+  /******************************** */
 for(employe of employees){
 total_age+=employe.age
 }
@@ -793,3 +793,21 @@ console.log(total_age/size)
 
 }
 calculateAverageAge()
+/*================================*/
+/*    getHighestPaidEmployee * */                 
+/******************************** */
+function getHighestPaidEmployee(){
+  let hight_price =0
+  for(hight_salery of employees){
+      if(hight_price<hight_salery.salary){
+        hight_price=hight_salery.salary
+      }
+  }
+  for(print_highet of employees){
+    if(hight_price==print_highet.salary){
+
+      console.log(print_highet)
+    }
+  }
+}
+getHighestPaidEmployee()
