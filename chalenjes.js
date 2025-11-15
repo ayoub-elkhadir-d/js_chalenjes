@@ -752,17 +752,24 @@ const employees = [
 ];
 let size = employees.length
 
-
+/*================================*/
+                 1
+/******************************** */
 function getFirstEmployeeFirstName(){
   console.log(employees[0].firstName)
 }
-
+/*================================*/
+                 2
+/******************************** */
 function getLastEmployeeLastName(){
   console.log(employees[size-1].lastName)
 }
 
-
- function getEmployeeDepartmentById(){
-
+/*================================*/
+                 3
+/******************************** */
+ function getEmployeeDepartmentById(id){
+   console.log(employees[id-1].department )
 
  }
+getEmployeeDepartmentById(5)
